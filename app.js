@@ -8,6 +8,9 @@ app.set("view engine", "ejs");
 app.get("/", function (req, res) {
   res.render("index.ejs");
 });
+app.get("/support", (req, res) => {
+  res.render("support.ejs");
+});
 app.listen(process.env.PORT || 3000, function () {});
 
 function runScraper() {
